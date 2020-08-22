@@ -11,4 +11,13 @@ function changeColor() {
 
     document.body.style.backgroundColor = randomcolor;
     document.querySelector(".header").innerHTML = "Background Color is: " + randomcolor;
+
 }
+
+const toggleButton = document.querySelector(".fas");
+
+toggleButton.addEventListener("click", function () {
+    document.querySelector(".navlink").classList.toggle("showNav");
+    document.querySelector(".fas").classList.toggle("fas-rotate");
+
+});

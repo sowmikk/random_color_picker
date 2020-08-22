@@ -7,3 +7,11 @@ function changeColor() {
     document.querySelector('.header').innerHTML = "Background Color is: " + color[randomNumber];
     console.log(randomNumber);
 }
+
+const toggle = document.querySelector(".fas");
+
+toggle.addEventListener("click", function () {
+    document.querySelector(".navlink").classList.toggle("showNav");
+    document.querySelector(".fas").classList.toggle("fas-rotate");
+
+});
